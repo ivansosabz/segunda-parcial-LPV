@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Registrar" android:id="@+id/registrar"/>
+    <item android:title="Salir" android:id="@+id/salir"/>
+    <item android:title="Apagar" android:id="@+id/apagar" android:icon="@android:drawable/ic_lock_power_off"
+          app:showAsAction="always"/>
+</menu>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <!-- Título de la pantalla -->
+    <TextView
+            android:id="@+id/textViewModificar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Modificar Contraseña"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:padding="16dp"/>
+
+    <!-- Usuario Actual -->
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+        <TextView
+                android:id="@+id/textViewUsuario"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usuario Actual:"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"/>
+
+        <EditText
+                android:id="@+id/editTextUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/textViewUsuario"
+                android:layout_marginStart="16dp"
+                android:hint="Usuario"
+                android:inputType="text"/>
+
+    </RelativeLayout>
+
+    <!-- Contraseña Actual -->
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+        <TextView
+                android:id="@+id/textViewContrasenaActual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contraseña Actual:"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"/>
+
+        <EditText
+                android:id="@+id/editTextContrasenaActual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/textViewContrasenaActual"
+                android:layout_marginStart="16dp"
+                android:hint="Contraseña Actual"
+                android:inputType="textPassword"/>
+
+    </RelativeLayout>
+
+    <!-- Nueva Contraseña -->
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+        <TextView
+                android:id="@+id/textViewNuevaContrasena"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nueva Contraseña:"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"/>
+
+        <EditText
+                android:id="@+id/editTextNuevaContrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/textViewNuevaContrasena"
+                android:layout_marginStart="16dp"
+                android:hint="Nueva Contraseña"
+                android:inputType="textPassword"/>
+
+    </RelativeLayout>
+    <!-- Confirmar Nueva Contraseña -->
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+        <TextView
+                android:id="@+id/textViewConfirmarContrasena"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirmar Contraseña:"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"/>
+
+        <EditText
+                android:id="@+id/editTextConfirmarContrasena"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/textViewConfirmarContrasena"
+                android:layout_marginStart="16dp"
+                android:hint="Repita la nueva contraseña"
+                android:inputType="textPassword"/>
+    </RelativeLayout>
+
+    <!-- Botones -->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="16dp">
+
+        <Button
+                android:id="@+id/buttonModificar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modificar"
+                android:layout_marginEnd="8dp"/>
+
+        <Button
+                android:id="@+id/buttonCancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancelar"
+                android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
